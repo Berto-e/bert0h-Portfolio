@@ -40,12 +40,8 @@ body {
 
 }
 
-.totoro{
-    width: 70px;
-    margin-right: 20px;
-    image-rendering: pixelated;
-    
-}
+
+
 .about-navbar {
 
     transition: background-color 0.3s ease;
@@ -125,7 +121,7 @@ body {
 
 .portada {
 
-    height: 180px;
+    height: 250px;
     width: 100%;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 5%, rgba(0, 212, 255, 1) 100%);
     display: flex;
@@ -138,43 +134,69 @@ body {
 
 .titulo {
 
-    width: 600px;
-    /*background: rgb(255 0 0 / 15.6%);*/
+    width: 800px;
     height: 100%;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+
+
+
 }
 
 .titulo img {
     display: inline-block;
-    width: 200px;
+    width: 260px;
     transform: translateX(30px) translateY(15px) rotate(-7deg);
     filter: drop-shadow(5px 5px 5px #0008);
-    z-index: 1;
     transition: transform 0.5s ease;
     image-rendering: pixelated;
 }
 
 .portada:hover .titulo img {
-    transform: translateX(30px) translateY(200px) rotate(-7deg);
+    transform: translateX(30px) translateY(300px) rotate(-7deg);
 }
 
 .titulo .texto {
     font-family: "Bebas Neue", sans-serif;
     /*Hacer reglas font face para poder cargar la font-family*/
     color: white;
-    font-size: 7rem;
+    font-size: 10rem;
     font-weight: 800;
     text-shadow: 5px 5px 5px #0008;
     line-height: 80%;
     transition: transform 0.5s ease;
     cursor: pointer;
 
+
 }
 
 .portada:hover .titulo .texto {
-    transform: translateX(-40px) translateY(-20px) scale(1.5);
+    transform: translateX(-110px) translateY(-30px) scale(1.5);
+}
+
+@media (max-width: 768px) {
+    .portada .titulo .texto {
+        font-size: 5rem;
+
+    }
+
+    .portada .titulo img {
+        width: 100px;
+        transform: translateX(10px) translateY(10px) rotate(-7deg);
+    }
+
+    .portada {
+        height: 150px;
+
+    }
+}
+
+@media(max-width: 768px) {
+    .portada:hover .titulo .texto {
+        transform: translateX(-40px) translateY(-20px) scale(1.5);
+    }
 }
 
 .sobre-mi {
@@ -198,7 +220,7 @@ body {
 }
 
 .sobre-mi p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: "MesloLGL Nerd Font";
     color: white;
     display: block;
@@ -248,10 +270,6 @@ body {
     gap: 30px;
     padding: 0;
 }
-
-
-
-
 
 .proyectos-lista li {
     position: relative;
@@ -316,7 +334,46 @@ footer {
     image-rendering: pixelated;
 }
 
-.contact{
-    height: 150px;
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+
+
 
 }
+
+.skills h2 {
+    font-size: 2em;
+
+    color: rgb(239, 239, 0);
+    font-family: "GohuFont 14 Nerd Font";
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #0008;
+    margin: 0;
+
+
+}
+
+.spellbook {
+    height: 200px;
+    width: 200px;
+    image-rendering: pixelated;
+    cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+
